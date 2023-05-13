@@ -22,15 +22,16 @@ def main():
     answer = "y"
     while answer.lower() == "y":
         price = get_price()
-        quantity = get_quantity
+        quantity = get_quantity()
 
         total = price * quantity
 
         print()
-        print("PRICE:    ", f"{price:  .2f}")
-        print("QUANTITY:    ", f"{total:  .2f}")
-        print("TOTAL:    ", f"{total:  .2f}")
+        print("PRICE:    ", f"{price: .2f}")
+        print("QUANTITY:    ", f"{total: .2f}")
+        print("TOTAL:    ", f"{total: .2f}")
         answer = input("Enter another line item? y/n: ")
+        print()
 
     print("Bye!")
 
